@@ -1,6 +1,9 @@
 import classNames from "classnames/bind";
 
 import styles from "./Home.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faHouse, faPhone, faSchool } from "@fortawesome/free-solid-svg-icons";
+import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 
 const cx = classNames.bind(styles);
 
@@ -22,7 +25,17 @@ function Home() {
           </div>
           <div className={cx("about__info-content")}>
             <div className={cx("info__content-card")}>
-                
+                <h2><FontAwesomeIcon icon={faSchool}/> EDUCATION</h2>
+                <p className={cx("school__name")}>HCMC UNIVERSITY OF INDUSTRY AND TRADE</p>
+                <p>Major: Software Engineering (2021 - 2025)</p>
+                <p>Bachelor of Information Technology.</p>
+                <p>GPA: 3.08/4.0</p>
+            </div>
+            <div className={cx("info__content-card")}>
+                <h2><FontAwesomeIcon icon={faAddressCard}/> CONTACT</h2>
+                <p><FontAwesomeIcon icon={faPhone}/> +84 337 467 283</p>
+                <p><FontAwesomeIcon icon={faEnvelope}/> nguyenbinh17062003@gmail.com</p>
+                <p><FontAwesomeIcon icon={faHouse}/> Binh Tan District, Ho Chi Minh City</p>
             </div>
           </div>
         </div>

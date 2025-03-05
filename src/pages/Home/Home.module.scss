@@ -25,16 +25,61 @@
     .section__about-info {
         width: 68%;
         height: 80vh;
+        padding: 50px 0;
 
-        .about__info-title{
+        .about__info-title {
             color: var(--white-color);
             background-color: var(--primary-color);
-            padding: 5px 40px;
-            border-radius: 999px;
-            h1{
+            padding: 10px 40px;
+            // border-radius: 999px;
+
+            h1 {
                 font-weight: 700;
                 font-size: 32px;
-               
+            }
+
+            h2 {
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .about__info-content {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+
+            .info__content-card {
+                background-color: var(--white-color);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                padding: 20px 40px;
+                width: 570px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-weight: 700;
+                    border-bottom: 1px solid var(--black-color);
+                    padding: 5px 0;
+                }
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 18px;
+                }
+
+                .school__name {
+                    font-weight: 500;
+                }
             }
         }
     }
