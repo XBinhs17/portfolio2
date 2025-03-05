@@ -1,0 +1,41 @@
+.wrapper {
+    min-height: 100vh;
+    margin-top: 55px;
+    background-color: var(--secondary-color);
+    padding: 20px 100px;
+}
+
+.section__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .section__about-avatar {
+        background-color: var(--white-color);
+        width: 30%;
+        border-radius: 50%;
+        left: 5px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .section__about-info {
+        width: 68%;
+        height: 80vh;
+
+        .about__info-title{
+            color: var(--white-color);
+            background-color: var(--primary-color);
+            padding: 5px 40px;
+            border-radius: 999px;
+            h1{
+                font-weight: 700;
+                font-size: 32px;
+               
+            }
+        }
+    }
+}
