@@ -1,0 +1,72 @@
+.wrapper {
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-family: var(--fontText);
+    border-radius: 100px;
+
+}
+
+.outline {
+    color: var(--text);
+    background-color: var(--primary);
+    border: 1px solid var(--text);
+    padding: 9px 16px;
+    min-width: 100px;
+    font-size: 1.6em;
+    font-weight: 400;
+
+    &:hover {
+        color: var(--primary);
+        background-color: var(--text);
+        border: 1px solid var(--primary);
+    }
+}
+
+.primary {
+    min-width: 100px;
+    color: var(--primary);
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    border: 1px solid var(--primary);
+    padding: 9px 16px;
+    font-size: 1.6em;
+    font-weight: 400;
+
+    &:hover {
+        color: var(--text);
+        background-color: var(--primary);
+        border: 1px solid var(--text);
+    }
+}
+
+.DetailCart {
+    min-width: 65%;
+    color: var(--primary);
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+    border: 1px solid var(--primary);
+    padding: 6px 8px;
+    transition: all 0.1s linear;
+
+    &:hover {
+        color: var(--text);
+        background-color: var(--primary);
+        border: 1px solid var(--text);
+    }
+}
+
+.AddCart {
+    min-width: 30%;
+    color: var(--text);
+    background-color: var(--primary);
+    border: 1px solid var(--text);
+    padding: 6px 16px;
+    font-size: 1em;
+    font-weight: 400;
+    transition: all 0.1s linear;
+
+    &:hover {
+        color: var(--primary);
+        background-color: var(--text);
+        border: 1px solid var(--primary);
+        box-shadow: 0 0 10px rgba(250, 69, 69, 0.6);
+    }
+}
