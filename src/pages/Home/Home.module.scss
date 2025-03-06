@@ -6,95 +6,179 @@
 }
 
 .section__about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh;
-    border-bottom: 1px solid var(--white-color);
+    height: 100vh;
 
-    .section__about-avatar {
-        background-color: var(--white-color);
-        width: 30%;
-        border-radius: 50%;
-        left: 5px;
-        box-shadow: rgba(255, 255, 255, 1) 0px 22px 70px 4px;
+    .section__about-title {
+        text-align: center;
+        padding: 60px 0 0 0;
+        border-bottom: 1px solid var(--white-color);
 
-        img {
-            width: 100%;
+        h1 {
+            font-weight: 700;
+            font-size: 36px;
+            color: var(--white-color);
         }
     }
 
-    .section__about-info {
-        width: 68%;
-        padding: 50px 0;
+    .section__about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0 0 0;
 
-        .about__info-title {
-            color: var(--white-color);
-            // background-color: var(--primary-color);
-            padding: 10px 0;
-            // border-radius: 999px;
+        .section__about-avatar {
+            width: 30%;
+            border-radius: 50%;
+            left: 5px;
 
-            h1 {
-                font-weight: 700;
-                font-size: 36px;
-            }
-
-            h2 {
-                font-weight: 500;
-            }
-
-            p {
-                font-size: 16px;
+            img {
+                width: 80%;
+                filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 1));
             }
         }
 
-        .about__info-content {
-            display: flex;
-            gap: 20px;
-            padding: 20px 0;
+        .section__about-info {
+            width: 68%;
+            padding: 50px 0;
 
-            .info__content-card {
-                background-color: var(--white-color);
-                backdrop-filter: blur(10px);
-                -webkit-backdrop-filter: blur(10px);
-                padding: 20px 40px;
-                width: 570px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                border-radius: 10px;
+            .about__info-title {
+                color: var(--white-color);
+                padding: 10px 0;
 
+                h1 {
+                    font-weight: 700;
+                    font-size: 36px;
+
+                    span {
+                        color: var(--highlight-color);
+                    }
+                }
 
                 h2 {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    font-weight: 700;
-                    border-bottom: 1px solid var(--black-color);
-                    padding: 5px 0;
+                    font-weight: 500;
                 }
 
                 p {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    font-size: 18px;
+                    font-size: 16px;
                 }
+            }
 
-                .school__name {
-                    font-weight: 500;
+            .about__info-content {
+                display: flex;
+                gap: 20px;
+                padding: 20px 0;
+
+                .info__content-card {
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    padding: 20px 40px;
+                    width: 570px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    color: var(--white-color);
+                    border: 1px solid var(--white-color);
+
+                    h2 {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        font-weight: 700;
+                        border-bottom: 1px solid var(--white-color);
+                        padding: 5px 0;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        font-size: 18px;
+                    }
+
+                    .school__name {
+                        font-weight: 500;
+                    }
                 }
             }
         }
     }
 }
 
-.section__skills{
-    .section__skills-title{
+.section__skills {
+    min-height: 100vh;
+
+    .section__skills-title {
         text-align: center;
-        padding: 60px 0 0 0;
-        h1{
+        border-bottom: 1px solid var(--white-color);
+
+        h1 {
             font-weight: 700;
             font-size: 36px;
             color: var(--white-color);
+        }
+    }
+
+    .section__skills-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 60px 0 0 0;
+
+        .skill__card {
+            background-color: var(--tertiry-color);
+            padding: 15px;
+            border-radius: 10px;
+
+            .skill__card-title {
+                text-align: center;
+                border-bottom: 1px solid var(--white-color);
+                color: var(--white-color);
+                padding: 10px;
+            }
+
+            .skill__card-content {
+                padding: 20px;
+                display: flex;
+                gap: 20px;
+                height: auto;
+
+                .skill__card-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    background-color: var(--white-color);
+                    padding: 15px;
+                    height: 180px;
+                    width: 120px;
+                    border-radius: 20px;
+                    border: 1px solid var(--black-color);
+
+                    .card__item-img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 60%;
+                        width: 100%;
+                        object-fit: cover;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .card__item-content {
+                        height: 40%;
+                        text-align: center;
+
+                        p {
+                            font-size: 16px;
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
         }
     }
 }
