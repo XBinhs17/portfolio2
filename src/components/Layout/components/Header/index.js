@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 const menuItems = [
   { name: "Home", path: "/" },
-  { name: "Skill", path: "/skill" },
+  { name: "Skills", path: "/skill" },
   { name: "Qualification", path: "/qualification" },
   { name: "Services", path: "/services" },
   { name: "Projects", path: "/projects" },
