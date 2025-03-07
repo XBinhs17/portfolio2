@@ -171,7 +171,7 @@ function Home() {
                     <div className={cx("card__item-img")}>
                       <img src={item.img} alt={`${item.name} logo`} />
                     </div>
-                    <div className={cx('card__item-content')}>
+                    <div className={cx("card__item-content")}>
                       <h3>{item.name}</h3>
                       <p>{item.level}</p>
                     </div>
@@ -181,7 +181,12 @@ function Home() {
             </div>
           ))}
         </div>
-        
+      </section>
+
+      <section className={cx("section__qualification")}>
+        <div className={cx("section__skills-title")}>
+          <h1>Qualification</h1>
+        </div>
       </section>
     </main>
   );
