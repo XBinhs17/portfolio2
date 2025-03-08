@@ -130,7 +130,6 @@ function Home() {
           <h1>About me</h1>
         </div>
         <div className={cx("section__about-content")}>
-          
           <div className={cx("about__info-title")}>
             <h1>
               Hi, I'm<span> Nguyen Xuan Binh</span>
@@ -251,6 +250,35 @@ function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className={cx("section__services")}>
+        <div className={cx("section__services-title")}>
+          <h1>Services</h1>
+          <h4>What i offer</h4>
+        </div>
+
+        <div className={cx("section__services-content")}>
+          <div className={cx("service__content-card")}>
+            <i class="ri-layout-line"></i>
+            <h1>UI <br></br> DeSigner</h1>
+            <p>Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+          </div>
+
+          <div className={cx("service__content-card")}>
+            <i class="ri-layout-line"></i>
+            <h1>UI <br></br> DeSigner</h1>
+            <p>Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+          </div>
+
+          <div className={cx("service__content-card")}>
+            <i class="ri-layout-line"></i>
+            <h1>UI <br></br> DeSigner</h1>
+            <p>Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+          </div>
+          
+        </div>
+        
       </section>
     </main>
   );

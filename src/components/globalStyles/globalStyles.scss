@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "remixicon/fonts/remixicon.css";
 
 :root {
     --fontText: 'Montserrat', sans-serif;
@@ -10,6 +11,7 @@
     --white-color: #fff;
     --black-color: #333333;
     --highlight-color: #00ffbf;
+    --hightlight-lv2-color: rgba(111, 247, 222, 0.9);
     --sizeText: 24px;
     --sizeTextTitle: 34px;
     --sizeTextTablet: 20px;
