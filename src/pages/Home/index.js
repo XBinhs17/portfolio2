@@ -4,6 +4,7 @@ import styles from "./Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBuilding,
+  faCakeCandles,
   faEnvelope,
   faHouse,
   faPhone,
@@ -55,7 +56,12 @@ const skills = [
       {
         name: "C#",
         level: "Basic",
-        img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741265999/C_xm7cne.png",
+        img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741441766/1175240_kicfzq.webp",
+      },
+      {
+        name: "C",
+        level: "Basic",
+        img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741441677/C_Logo_iktf4q.png",
       },
     ],
   },
@@ -92,6 +98,26 @@ const skills = [
         level: "Basic",
         img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741265738/figma_bg6ci0.png",
       },
+      {
+        name: "Canva",
+        level: "Basic",
+        img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741441583/canva_vjbsa5.webp",
+      },
+    ],
+  },
+  {
+    category: "Other",
+    items: [
+      {
+        name: "Github",
+        level: "Basic",
+        img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741442605/25231_gxva3d.png",
+      },
+      {
+        name: "Postman",
+        level: "Basic",
+        img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741442290/postman_vqmc3j.png",
+      },
     ],
   },
 ];
@@ -104,6 +130,17 @@ function Home() {
           <h1>About me</h1>
         </div>
         <div className={cx("section__about-content")}>
+          
+          <div className={cx("about__info-title")}>
+            <h1>
+              Hi, I'm<span> Nguyen Xuan Binh</span>
+            </h1>
+            <h2>Frontend Developer Based In Ho Chi Minh City</h2>
+            <h3>
+              <FontAwesomeIcon icon={faCakeCandles} /> June 2003
+            </h3>
+          </div>
+
           <div className={cx("section__about-avatar")}>
             <img
               src="https://res.cloudinary.com/dlteq4ism/image/upload/v1741162882/avt_dqsrbq.png"
@@ -112,24 +149,7 @@ function Home() {
           </div>
 
           <div className={cx("section__about-info")}>
-            <div className={cx("about__info-title")}>
-              <h1>
-                Hi, I'm<span> Nguyen Xuan Binh</span>
-              </h1>
-              <h2>Frontend Developer Based In Ho Chi Minh City</h2>
-            </div>
             <div className={cx("about__info-content")}>
-              {/* <div className={cx("info__content-card")}>
-                <h2>
-                  <FontAwesomeIcon icon={faSchool} /> EDUCATION
-                </h2>
-                <p className={cx("school__name")}>
-                  HCMC UNIVERSITY OF INDUSTRY AND TRADE
-                </p>
-                <p>Major: Software Engineering (2021 - 2025)</p>
-                <p>Bachelor of Information Technology.</p>
-                <p>GPA: 3.08/4.0</p>
-              </div> */}
               <div className={cx("info__content-card")}>
                 <h2>
                   <FontAwesomeIcon icon={faAddressCard} /> CONTACT
@@ -188,7 +208,7 @@ function Home() {
       <section className={cx("section__qualification")}>
         <div className={cx("section__qualification-title")}>
           <h1>Qualification</h1>
-          <h4>Experience & Education</h4>
+          <h4>Education & Experience</h4>
         </div>
 
         <div className={cx("section__qualification-content")}>
@@ -216,7 +236,7 @@ function Home() {
             <h1 className={cx("card__title")}>
               <FontAwesomeIcon icon={faBuilding} /> WORK
             </h1>
-           <div className={cx("card__content")}>
+            <div className={cx("card__content")}>
               <div className={cx("content__card-left")}>
                 <img
                   src="https://res.cloudinary.com/dlteq4ism/image/upload/v1741439064/AmazingPNG_fgpbmw.png"
@@ -228,7 +248,7 @@ function Home() {
                 <p>Position: Frontend Intern</p>
                 <p>Duration: August 2024 – November 2024</p>
               </div>
-           </div>
+            </div>
           </div>
         </div>
       </section>

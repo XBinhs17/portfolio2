@@ -29,6 +29,39 @@
         justify-content: space-between;
         align-items: center;
         padding: 60px 0 0 0;
+        margin-top: 5%;
+
+        .about__info-title {
+            color: var(--white-color);
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 30%;
+
+            h1 {
+                font-weight: 700;
+                font-size: 36px;
+
+                span {
+                    color: var(--highlight-color);
+                }
+            }
+
+            h2 {
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            h3 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
 
         .section__about-avatar {
             width: 30%;
@@ -42,30 +75,10 @@
         }
 
         .section__about-info {
-            width: 68%;
+            width: 30%;
             padding: 50px 0;
 
-            .about__info-title {
-                color: var(--white-color);
-                padding: 10px 0;
 
-                h1 {
-                    font-weight: 700;
-                    font-size: 36px;
-
-                    span {
-                        color: var(--highlight-color);
-                    }
-                }
-
-                h2 {
-                    font-weight: 500;
-                }
-
-                p {
-                    font-size: 16px;
-                }
-            }
 
             .about__info-content {
                 display: flex;
@@ -131,11 +144,15 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 60px 0 0 0;
+        margin-bottom: 50px;
 
         .skill__card {
-            background-color: var(--tertiry-color);
-            padding: 15px;
+            background: rgba(255, 255, 255, 0.1); // Nền trong suốt
+            backdrop-filter: blur(10px); // Hiệu ứng blur nền
+            -webkit-backdrop-filter: blur(10px); // Hỗ trợ Safari
             border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
             .skill__card-title {
                 text-align: center;
