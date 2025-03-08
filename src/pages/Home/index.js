@@ -3,6 +3,7 @@ import classNames from "classnames/bind";
 import styles from "./Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBuilding,
   faEnvelope,
   faHouse,
   faPhone,
@@ -118,7 +119,7 @@ function Home() {
               <h2>Frontend Developer Based In Ho Chi Minh City</h2>
             </div>
             <div className={cx("about__info-content")}>
-              <div className={cx("info__content-card")}>
+              {/* <div className={cx("info__content-card")}>
                 <h2>
                   <FontAwesomeIcon icon={faSchool} /> EDUCATION
                 </h2>
@@ -128,7 +129,7 @@ function Home() {
                 <p>Major: Software Engineering (2021 - 2025)</p>
                 <p>Bachelor of Information Technology.</p>
                 <p>GPA: 3.08/4.0</p>
-              </div>
+              </div> */}
               <div className={cx("info__content-card")}>
                 <h2>
                   <FontAwesomeIcon icon={faAddressCard} /> CONTACT
@@ -157,6 +158,7 @@ function Home() {
       <section className={cx("section__skills")}>
         <div className={cx("section__skills-title")}>
           <h1>Skills</h1>
+          <h4>My favorite skills</h4>
         </div>
 
         <div className={cx("section__skills-content")}>
@@ -184,8 +186,50 @@ function Home() {
       </section>
 
       <section className={cx("section__qualification")}>
-        <div className={cx("section__skills-title")}>
+        <div className={cx("section__qualification-title")}>
           <h1>Qualification</h1>
+          <h4>Experience & Education</h4>
+        </div>
+
+        <div className={cx("section__qualification-content")}>
+          <div className={cx("qualification__content-card")}>
+            <h1 className={cx("card__title")}>
+              <FontAwesomeIcon icon={faSchool} /> EDUCATION
+            </h1>
+            <div className={cx("card__content")}>
+              <div className={cx("content__card-left")}>
+                <img
+                  src="https://res.cloudinary.com/dlteq4ism/image/upload/v1741439065/HUITPNG_bdyqhi.png"
+                  alt="HUIT logo"
+                />
+              </div>
+              <div className={cx("content__card-right")}>
+                <h2>HCMC UNIVERSITY OF INDUSTRY AND TRADE</h2>
+                <p>Major: Software Engineering (2021 - 2025)</p>
+                <p>Bachelor of Information Technology.</p>
+                <p>GPA: 3.08/4.0</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={cx("qualification__content-card")}>
+            <h1 className={cx("card__title")}>
+              <FontAwesomeIcon icon={faBuilding} /> WORK
+            </h1>
+           <div className={cx("card__content")}>
+              <div className={cx("content__card-left")}>
+                <img
+                  src="https://res.cloudinary.com/dlteq4ism/image/upload/v1741439064/AmazingPNG_fgpbmw.png"
+                  alt="AmazingTech logo"
+                />
+              </div>
+              <div className={cx("content__card-right")}>
+                <h2>AMAZING TECH</h2>
+                <p>Position: Frontend Intern</p>
+                <p>Duration: August 2024 – November 2024</p>
+              </div>
+           </div>
+          </div>
         </div>
       </section>
     </main>

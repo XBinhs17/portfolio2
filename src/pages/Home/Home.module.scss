@@ -18,6 +18,10 @@
             font-size: 36px;
             color: var(--white-color);
         }
+
+        h4 {
+            color: var(--white-color);
+        }
     }
 
     .section__about-content {
@@ -116,6 +120,10 @@
             font-size: 36px;
             color: var(--white-color);
         }
+
+        h4 {
+            color: var(--white-color);
+        }
     }
 
     .section__skills-content {
@@ -179,6 +187,77 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.section__qualification {
+
+    .section__qualification-title {
+        text-align: center;
+        border-bottom: 1px solid var(--white-color);
+
+        h1 {
+            font-weight: 700;
+            font-size: 36px;
+            color: var(--white-color);
+        }
+
+        h4 {
+            color: var(--white-color);
+        }
+    }
+
+    .section__qualification-content {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+
+        .qualification__content-card {
+            width: 700px;
+            color: var(--white-color);
+            background: rgba(255, 255, 255, 0.1); // Nền trong suốt
+            backdrop-filter: blur(10px); // Hiệu ứng blur nền
+            -webkit-backdrop-filter: blur(10px); // Hỗ trợ Safari
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            .card__title {
+                padding: 10px 0;
+                text-align: center;
+                background-color: var(--primary-color);
+                border-radius: 999px;
+                margin-bottom: 10px;
+            }
+
+            .card__content {
+                display: flex;
+                justify-content: space-between;
+
+                .content__card-left {
+                    width: 30%;
+                    text-align: center;
+
+                    img {
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+
+                .content__card-right {
+                    width: 70%;
+
+                    p {
+                        padding: 5px;
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                }
+
+
+            }
+
         }
     }
 }
