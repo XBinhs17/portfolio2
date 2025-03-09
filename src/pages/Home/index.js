@@ -213,6 +213,25 @@ function Home() {
         <div className={cx("section__qualification-content")}>
           <div className={cx("qualification__content-card")}>
             <h1 className={cx("card__title")}>
+              <FontAwesomeIcon icon={faBuilding} /> WORK
+            </h1>
+            <div className={cx("card__content")}>
+              <div className={cx("content__card-left")}>
+                <img
+                  src="https://res.cloudinary.com/dlteq4ism/image/upload/v1741439064/AmazingPNG_fgpbmw.png"
+                  alt="AmazingTech logo"
+                />
+              </div>
+              <div className={cx("content__card-right")}>
+                <h2>AMAZING TECH</h2>
+                <p>Position: Frontend Intern</p>
+                <p>Duration: August 2024 – November 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={cx("qualification__content-card")}>
+            <h1 className={cx("card__title")}>
               <FontAwesomeIcon icon={faSchool} /> EDUCATION
             </h1>
             <div className={cx("card__content")}>
@@ -227,25 +246,6 @@ function Home() {
                 <p>Major: Software Engineering (2021 - 2025)</p>
                 <p>Bachelor of Information Technology.</p>
                 <p>GPA: 3.08/4.0</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={cx("qualification__content-card")}>
-            <h1 className={cx("card__title")}>
-              <FontAwesomeIcon icon={faBuilding} /> WORK
-            </h1>
-            <div className={cx("card__content")}>
-              <div className={cx("content__card-left")}>
-                <img
-                  src="https://res.cloudinary.com/dlteq4ism/image/upload/v1741439064/AmazingPNG_fgpbmw.png"
-                  alt="AmazingTech logo"
-                />
-              </div>
-              <div className={cx("content__card-right")}>
-                <h2>AMAZING TECH</h2>
-                <p>Position: Frontend Intern</p>
-                <p>Duration: August 2024 – November 2024</p>
               </div>
             </div>
           </div>

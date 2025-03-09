@@ -123,7 +123,9 @@
 
 .section__skills {
     min-height: 100vh;
-
+    margin-bottom: 100px;
+    border-bottom: 1px solid var(--white-color);
+    padding: 20px 0;
     .section__skills-title {
         text-align: center;
         border-bottom: 1px solid var(--white-color);
@@ -144,7 +146,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 60px 0 0 0;
-        margin-bottom: 50px;
 
         .skill__card {
             background: rgba(255, 255, 255, 0.1); // Nền trong suốt
@@ -218,12 +219,18 @@
 }
 
 .section__qualification {
-
+    display: flex;
     margin-bottom: 50px;
+    justify-content: space-between;
+    width: 100%;
 
     .section__qualification-title {
-        text-align: center;
-        border-bottom: 1px solid var(--white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-right: 1px solid var(--white-color);
+        width: 40%;
 
         h1 {
             font-weight: 700;
@@ -238,7 +245,10 @@
 
     .section__qualification-content {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
+        gap: 30px;
+        width: 60%;
         padding: 20px;
 
         .qualification__content-card {
