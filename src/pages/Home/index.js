@@ -260,25 +260,38 @@ function Home() {
 
         <div className={cx("section__services-content")}>
           <div className={cx("service__content-card")}>
-            <i class="ri-layout-line"></i>
-            <h1>UI <br></br> DeSigner</h1>
-            <p>Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+            <i className="ri-layout-line"></i>
+            <h1>
+              UI <br></br> DeSigner
+            </h1>
+            <p>
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
           </div>
 
           <div className={cx("service__content-card")}>
-            <i class="ri-layout-line"></i>
-            <h1>UI <br></br> DeSigner</h1>
-            <p>Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+            <i className={cx("ri-code-s-slash-line")}></i>
+            <h1>
+              Website <br></br> Development
+            </h1>
+            <p>
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
           </div>
 
           <div className={cx("service__content-card")}>
-            <i class="ri-layout-line"></i>
-            <h1>UI <br></br> DeSigner</h1>
-            <p>Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+            <i className="ri-brush-line"></i>
+            <h1>
+              Banner <br></br> DeSigner
+            </h1>
+            <p>
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
           </div>
-          
         </div>
-        
       </section>
     </main>
   );
