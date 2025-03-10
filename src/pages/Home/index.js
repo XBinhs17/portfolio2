@@ -293,6 +293,17 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section className={cx("section__projects")}>
+        <div className={cx("section__projects-title")}>
+          <h1>Services</h1>
+          <h4>Most recent work</h4>
+        </div>
+
+        <div className={cx('section__projects-content')}>
+
+        </div>
+      </section>
     </main>
   );
 }
