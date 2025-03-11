@@ -368,6 +368,24 @@
     }
 }
 
+.section__projects{
+
+    .section__projects-title{
+        text-align: center;
+        border-bottom: 1px solid var(--white-color);
+
+        h1 {
+            font-weight: 700;
+            font-size: 36px;
+            color: var(--white-color);
+        }
+
+        h4 {
+            color: var(--white-color);
+        }
+    }
+}
+
 // animation
 
 @keyframes light-sweep {
