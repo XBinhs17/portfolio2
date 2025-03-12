@@ -12,6 +12,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const cx = classNames.bind(styles);
 const skills = [
@@ -119,6 +124,45 @@ const skills = [
         img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741442290/postman_vqmc3j.png",
       },
     ],
+  },
+];
+
+const projects = [
+  {
+    id: 1,
+    image: "https://picsum.photos/200/300",
+    title: "E-commerce Website",
+    description: "A modern e-commerce platform with React and Node.js.",
+  },
+  {
+    id: 2,
+    image: "https://picsum.photos/200/300",
+    title: "Portfolio Website",
+    description: "A personal portfolio showcasing projects and skills.",
+  },
+  {
+    id: 3,
+    image: "https://picsum.photos/200/300",
+    title: "Task Management App",
+    description: "A simple and efficient task management application.",
+  },
+  {
+    id: 4,
+    image: "https://picsum.photos/200/300",
+    title: "Mobile App UI",
+    description: "A sleek and modern mobile application UI design.",
+  },
+  {
+    id: 5,
+    image: "https://picsum.photos/200/300",
+    title: "Admin Dashboard",
+    description: "An interactive admin dashboard for managing data.",
+  },
+  {
+    id: 6,
+    image: "https://picsum.photos/200/300",
+    title: "Cyber Security Tool",
+    description: "A security tool to enhance data protection.",
   },
 ];
 
@@ -300,8 +344,27 @@ function Home() {
           <h4>Most recent work</h4>
         </div>
 
-        <div className={cx('section__projects-content')}>
-          
+        <div className={cx("section__projects-content")}>
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={3}
+            navigation
+            // pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            loop
+          >
+            {projects.map((project) => (
+              <SwiperSlide key={project.id}>
+                <div className={styles.projectCard}>
+                  <img src={project.image} alt={project.title} />
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <button>Xem chi tiết</button>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
     </main>
