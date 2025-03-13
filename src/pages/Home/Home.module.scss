@@ -427,6 +427,66 @@
     }
 }
 
+.section__other {
+    text-align: center;
+    padding: 50px 0;
+
+    &-title {
+        margin-bottom: 30px;
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--white-color);
+        }
+
+        h4 {
+            font-size: 18px;
+            color: var(--white-color);
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .other__content-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        i {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: gray;
+        }
+    }
+}
+
+
 // animation
 
 @keyframes light-sweep {

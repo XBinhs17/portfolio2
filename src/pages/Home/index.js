@@ -1,4 +1,5 @@
 import classNames from "classnames/bind";
+import { useNavigate } from "react-router-dom";
 
 import styles from "./Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -167,6 +168,8 @@ const projects = [
 ];
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <main className={cx("wrapper")}>
       <section className={cx("section__about")}>
@@ -365,6 +368,45 @@ function Home() {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+      </section>
+
+      <section className={cx("section__other")}>
+        <div className={cx("section__other-title")}>
+          <h1>Other</h1>
+          <h4>My Personal Interests</h4>
+        </div>
+
+        <div className={cx("section__other-content")}>
+          <div
+            className={cx("other__content-card")}
+            onClick={() => navigate("/games")}
+          >
+            <i className="ri-gamepad-line"></i>
+            <h2>Games I Play</h2>
+            <p>Discover the games I enjoy in my free time.</p>
+          </div>
+
+          <div
+            className={cx("other__content-card")}
+            onClick={() => navigate("/artworks")}
+          >
+            <i className="ri-paint-brush-line"></i>
+            <h2>My Drawings</h2>
+            <p>View my collection of hand-drawn artwork.</p>
+          </div>
+
+          <div
+            className={cx("other__content-card")}
+            onClick={() => navigate("/designs")}
+          >
+            <i className="ri-image-line"></i>
+            <h2>Design Works</h2>
+            <p>
+              Explore my graphic design projects including banners, posters, and
+              more.
+            </p>
+          </div>
         </div>
       </section>
     </main>
