@@ -203,18 +203,31 @@ function Home() {
             <div className={cx("about__info-content")}>
               <div className={cx("info__content-card")}>
                 <h2>
-                  <FontAwesomeIcon icon={faAddressCard} /> CONTACT
+                  <FontAwesomeIcon icon={faAddressCard} /> CONTACT{" "} -
+                  <span>Click email to contact me!</span>
                 </h2>
                 <p>
                   <FontAwesomeIcon icon={faPhone} /> +84 337 467 283
                 </p>
                 <p>
                   <FontAwesomeIcon icon={faEnvelope} />{" "}
-                  nguyenbinh17062003@gmail.com
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&to=nguyenbinh17062003@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    nguyenbinh17062003@gmail.com
+                  </a>
                 </p>
                 <p>
                   <FontAwesomeIcon icon={faGithub} />{" "}
-                  https://github.com/XBinhs17
+                  <a
+                    href="https://github.com/XBinhs17"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://github.com/XBinhs17
+                  </a>
                 </p>
                 <p>
                   <FontAwesomeIcon icon={faHouse} /> Binh Tan District, Ho Chi
