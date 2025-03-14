@@ -224,6 +224,7 @@
     margin-bottom: 50px;
     justify-content: space-between;
     width: 100%;
+    min-height: 80vh;
 
     .section__qualification-title {
         display: flex;
@@ -247,7 +248,8 @@
     .section__qualification-content {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         gap: 30px;
         width: 60%;
         padding: 20px;
@@ -287,25 +289,39 @@
                 .content__card-right {
                     width: 70%;
 
+                    h2 a {
+                        text-decoration: none;
+                        color: var(--highlight-color);
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: var(--white-color);
+                            text-decoration: underline;
+                        }
+                    }
+
                     p {
                         padding: 5px;
                         font-size: 16px;
                         line-height: 16px;
                     }
                 }
-
-
             }
-
         }
     }
 }
 
 .section__services {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .section__services-title {
         text-align: center;
-        border-bottom: 1px solid var(--white-color);
+        border-top: 1px solid var(--white-color);
+        width: 100%;
 
         h1 {
             font-weight: 700;
@@ -396,6 +412,7 @@
             overflow: hidden;
             text-align: center;
             padding: 15px;
+            width: 550px;
 
             img {
                 width: 100%;

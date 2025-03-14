@@ -270,7 +270,15 @@ function Home() {
                 />
               </div>
               <div className={cx("content__card-right")}>
-                <h2>AMAZING TECH</h2>
+                <h2>
+                  <a
+                    href="https://amazingtech.vn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    AMAZING TECH COMPANY
+                  </a>
+                </h2>
                 <p>Position: Frontend Intern</p>
                 <p>Duration: August 2024 – November 2024</p>
               </div>
@@ -289,7 +297,15 @@ function Home() {
                 />
               </div>
               <div className={cx("content__card-right")}>
-                <h2>HCMC UNIVERSITY OF INDUSTRY AND TRADE</h2>
+                <h2>
+                  <a
+                    href="https://huit.edu.vn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    HCMC UNIVERSITY OF INDUSTRY AND TRADE
+                  </a>
+                </h2>
                 <p>Major: Software Engineering (2021 - 2025)</p>
                 <p>Bachelor of Information Technology.</p>
                 <p>GPA: 3.08/4.0</p>
