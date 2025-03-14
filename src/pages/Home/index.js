@@ -124,6 +124,11 @@ const skills = [
         level: "Basic",
         img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741442290/postman_vqmc3j.png",
       },
+      {
+        name: "Cloudinary",
+        level: "Basic",
+        img: "https://res.cloudinary.com/dlteq4ism/image/upload/v1741934478/cloudinary-icon8821.logowik.com_rvaqiz.webp",
+      },
     ],
   },
 ];

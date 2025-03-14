@@ -16,17 +16,21 @@ const menuItems = [
 function Header() {
   return (
     <header className={cx("wrapper")}>
-      <div className={cx("logo")}>NXB</div>
+      <NavLink to="/" className={cx("logo")}>
+        NXB
+      </NavLink>
       <nav className={cx("menu")}>
         <ul>
           {menuItems.map((item, index) => (
             <li key={index}>
-                <NavLink
-                    to={item.path}
-                    className={({isActive}) => cx('menu__item', {active: isActive})}
-                >
-                    {item.name}
-                </NavLink>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  cx("menu__item", { active: isActive })
+                }
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </ul>
