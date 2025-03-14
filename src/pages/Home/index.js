@@ -203,7 +203,7 @@ function Home() {
             <div className={cx("about__info-content")}>
               <div className={cx("info__content-card")}>
                 <h2>
-                  <FontAwesomeIcon icon={faAddressCard} /> CONTACT{" "} -
+                  <FontAwesomeIcon icon={faAddressCard} /> CONTACT -
                   <span>Click email to contact me!</span>
                 </h2>
                 <p>
@@ -388,7 +388,7 @@ function Home() {
             slidesPerView={3}
             navigation
             // pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 1000 }}
             loop
           >
             {projects.map((project) => (
@@ -412,14 +412,14 @@ function Home() {
         </div>
 
         <div className={cx("section__other-content")}>
-          <div
+          {/* <div
             className={cx("other__content-card")}
             onClick={() => navigate("/games")}
           >
             <i className="ri-gamepad-line"></i>
             <h2>Games I Play</h2>
             <p>Discover the games I enjoy in my free time.</p>
-          </div>
+          </div> */}
 
           <div
             className={cx("other__content-card")}
@@ -443,6 +443,19 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <div className={cx("contact__me")}>
+        <button>
+          {" "}
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=nguyenbinh17062003@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faEnvelope} /> Contact Me With Gmail
+          </a>
+        </button>
+      </div>
     </main>
   );
 }
