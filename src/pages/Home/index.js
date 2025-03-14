@@ -1,5 +1,8 @@
 import classNames from "classnames/bind";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 import styles from "./Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -137,52 +140,40 @@ const projects = [
   {
     id: 1,
     image: "https://picsum.photos/200/300",
-    title: "E-commerce Website",
-    description: "A modern e-commerce platform with React and Node.js.",
+    title: "Website handicraft products",
+    description: "A personal portfolio showcasing projects and skills.",
   },
   {
     id: 2,
     image: "https://picsum.photos/200/300",
-    title: "Portfolio Website",
-    description: "A personal portfolio showcasing projects and skills.",
+    title: "Jewelry business website",
+    description:
+      "A modern e-commerce platform with React, HTML, CSS, PHP and Node.js.",
   },
   {
     id: 3,
     image: "https://picsum.photos/200/300",
-    title: "Task Management App",
-    description: "A simple and efficient task management application.",
-  },
-  {
-    id: 4,
-    image: "https://picsum.photos/200/300",
-    title: "Mobile App UI",
-    description: "A sleek and modern mobile application UI design.",
-  },
-  {
-    id: 5,
-    image: "https://picsum.photos/200/300",
-    title: "Admin Dashboard",
-    description: "An interactive admin dashboard for managing data.",
-  },
-  {
-    id: 6,
-    image: "https://picsum.photos/200/300",
-    title: "Cyber Security Tool",
-    description: "A security tool to enhance data protection.",
+    title: "Jewelry business website",
+    description:
+      "A modern e-commerce platform with React, HTML, CSS, PHP and Node.js.",
   },
 ];
 
 function Home() {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <main className={cx("wrapper")}>
       <section className={cx("section__about")}>
         <div className={cx("section__about-title")}>
-          <h1>About me</h1>
+          <h1 data-aos="zoom-in">About me</h1>
         </div>
         <div className={cx("section__about-content")}>
-          <div className={cx("about__info-title")}>
+          <div data-aos="fade-up" className={cx("about__info-title")}>
             <h1>
               Hi, I'm<span> Nguyen Xuan Binh</span>
             </h1>
@@ -190,16 +181,25 @@ function Home() {
             <h3>
               <FontAwesomeIcon icon={faCakeCandles} /> June 2003
             </h3>
+            <p>
+              I am a Frontend Developer with a strong passion for UI/UX design.
+              My strengths lie in building optimized, responsive, and smooth
+              interactive interfaces using ReactJS, SCSS, and Bootstrap. I am
+              always eager to learn, improve my skills, and develop web products
+              that offer the best user experience. My goal is to become a
+              professional Frontend Developer, combining both programming logic
+              and design aesthetics to create high-quality digital products.
+            </p>
           </div>
 
-          <div className={cx("section__about-avatar")}>
+          <div data-aos="zoom-in" className={cx("section__about-avatar")}>
             <img
               src="https://res.cloudinary.com/dlteq4ism/image/upload/v1741162882/avt_dqsrbq.png"
               alt="avatar"
             />
           </div>
 
-          <div className={cx("section__about-info")}>
+          <div data-aos="fade-left" className={cx("section__about-info")}>
             <div className={cx("about__info-content")}>
               <div className={cx("info__content-card")}>
                 <h2>
@@ -240,18 +240,18 @@ function Home() {
       </section>
 
       <section className={cx("section__skills")}>
-        <div className={cx("section__skills-title")}>
+        <div data-aos="zoom-in" className={cx("section__skills-title")}>
           <h1>Skills</h1>
           <h4>My favorite skills</h4>
         </div>
 
         <div className={cx("section__skills-content")}>
           {skills.map((skill, index) => (
-            <div key={index} className={cx("skill__card")}>
+            <div data-aos="fade-up" key={index} className={cx("skill__card")}>
               <div className={cx("skill__card-title")}>
                 <h2>{skill.category}</h2>
               </div>
-              <div className={cx("skill__card-content")}>
+              <div data-aos="zoom-in" className={cx("skill__card-content")}>
                 {skill.items.map((item, i) => (
                   <div key={i} className={cx("skill__card-item")}>
                     <div className={cx("card__item-img")}>
@@ -270,13 +270,19 @@ function Home() {
       </section>
 
       <section className={cx("section__qualification")}>
-        <div className={cx("section__qualification-title")}>
+        <div
+          data-aos="fade-left"
+          className={cx("section__qualification-title")}
+        >
           <h1>Qualification</h1>
           <h4>Education & Experience</h4>
         </div>
 
         <div className={cx("section__qualification-content")}>
-          <div className={cx("qualification__content-card")}>
+          <div
+            data-aos="fade-right"
+            className={cx("qualification__content-card")}
+          >
             <h1 className={cx("card__title")}>
               <FontAwesomeIcon icon={faBuilding} /> WORK
             </h1>
@@ -303,7 +309,10 @@ function Home() {
             </div>
           </div>
 
-          <div className={cx("qualification__content-card")}>
+          <div
+            data-aos="fade-right"
+            className={cx("qualification__content-card")}
+          >
             <h1 className={cx("card__title")}>
               <FontAwesomeIcon icon={faSchool} /> EDUCATION
             </h1>
@@ -340,7 +349,7 @@ function Home() {
         </div>
 
         <div className={cx("section__services-content")}>
-          <div className={cx("service__content-card")}>
+          <div data-aos="zoom-in" className={cx("service__content-card")}>
             <i className="ri-layout-line"></i>
             <h1>
               UI <br></br> DeSigner
@@ -351,7 +360,7 @@ function Home() {
             </p>
           </div>
 
-          <div className={cx("service__content-card")}>
+          <div data-aos="zoom-in" className={cx("service__content-card")}>
             <i className={cx("ri-code-s-slash-line")}></i>
             <h1>
               Website <br></br> Development
@@ -362,7 +371,7 @@ function Home() {
             </p>
           </div>
 
-          <div className={cx("service__content-card")}>
+          <div data-aos="zoom-in" className={cx("service__content-card")}>
             <i className="ri-brush-line"></i>
             <h1>
               Banner <br></br> DeSigner
@@ -387,8 +396,7 @@ function Home() {
             spaceBetween={20}
             slidesPerView={3}
             navigation
-            // pagination={{ clickable: true }}
-            autoplay={{ delay: 1000 }}
+            autoplay={{ delay: 1800 }}
             loop
           >
             {projects.map((project) => (
@@ -412,18 +420,10 @@ function Home() {
         </div>
 
         <div className={cx("section__other-content")}>
-          {/* <div
-            className={cx("other__content-card")}
-            onClick={() => navigate("/games")}
-          >
-            <i className="ri-gamepad-line"></i>
-            <h2>Games I Play</h2>
-            <p>Discover the games I enjoy in my free time.</p>
-          </div> */}
-
           <div
             className={cx("other__content-card")}
             onClick={() => navigate("/artworks")}
+            data-aos="zoom-right"
           >
             <i className="ri-paint-brush-line"></i>
             <h2>My Drawings</h2>
@@ -433,6 +433,7 @@ function Home() {
           <div
             className={cx("other__content-card")}
             onClick={() => navigate("/designs")}
+            data-aos="zoom-left"
           >
             <i className="ri-image-line"></i>
             <h2>Design Works</h2>
