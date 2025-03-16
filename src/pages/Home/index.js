@@ -150,13 +150,6 @@ const projects = [
     description:
       "A modern e-commerce platform with React, HTML, CSS, PHP and Node.js.",
   },
-  {
-    id: 3,
-    image: "https://picsum.photos/200/300",
-    title: "Jewelry business website",
-    description:
-      "A modern e-commerce platform with React, HTML, CSS, PHP and Node.js.",
-  },
 ];
 
 function Home() {
@@ -391,26 +384,24 @@ function Home() {
         </div>
 
         <div className={cx("section__projects-content")}>
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={3}
-            navigation
-            autoplay={{ delay: 1800 }}
-            loop
-          >
-            {projects.map((project) => (
-              <SwiperSlide key={project.id}>
-                <div className={styles.projectCard}>
-                  <img src={project.image} alt={project.title} />
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <button>Xem chi tiết</button>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+         
+         {/* project1 */}
+          <div className={cx("project__card", "container-fill")}>
+            <div className={cx("row")}>
+              <div className={cx("col-md-6", "left__row1")}>
+                <img src="https://res.cloudinary.com/dlteq4ism/image/upload/v1742129058/tcmn1_ck1dfq.jpg"/>
+              </div>
+              <div className={cx("col-md-6", "right__row1")}>
+                <h1 className={cx("project-name")}>Website introducing and providing Vietnamese handicraft products</h1>
+                <h4>Date: 9/2024 - 12/2024</h4>
+                <h4>Team size: <span>3</span> - Leader</h4>
+              </div>
+            </div>
+          </div>
+
+
         </div>
+
       </section>
 
       <section className={cx("section__other")}>
