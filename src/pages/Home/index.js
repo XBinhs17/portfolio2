@@ -384,24 +384,26 @@ function Home() {
         </div>
 
         <div className={cx("section__projects-content")}>
-         
-         {/* project1 */}
+          {/* project1 */}
           <div className={cx("project__card", "container-fill")}>
             <div className={cx("row")}>
               <div className={cx("col-md-6", "left__row1")}>
-                <img src="https://res.cloudinary.com/dlteq4ism/image/upload/v1742129058/tcmn1_ck1dfq.jpg"/>
+                <img src="https://res.cloudinary.com/dlteq4ism/image/upload/v1742129058/tcmn1_ck1dfq.jpg" />
               </div>
               <div className={cx("col-md-6", "right__row1")}>
-                <h1 className={cx("project-name")}>Website introducing and providing Vietnamese handicraft products</h1>
+                <h1 className={cx("project-name")}>
+                  Website introducing and providing Vietnamese handicraft
+                  products
+                </h1>
                 <h4>Date: 9/2024 - 12/2024</h4>
-                <h4>Team size: <span>3</span> - Leader</h4>
+                <h4>
+                  Team size: <span>3</span>
+                </h4>
+                <h4>Technologies: </h4>
               </div>
             </div>
           </div>
-
-
         </div>
-
       </section>
 
       <section className={cx("section__other")}>
