@@ -399,7 +399,37 @@ function Home() {
                 <h4>
                   Team size: <span>3</span>
                 </h4>
-                <h4>Technologies: </h4>
+                {/* Công nghệ sử dụng */}
+                <h4>Technologies:</h4>
+                <ul className={cx("technologies-list")}>
+                  <li>
+                    <strong>Frontend:</strong> ReactJS, Redux, SCSS, Bootstrap
+                  </li>
+                  <li>
+                    <strong>Backend:</strong> Node.js, Express.js, MongoDB
+                  </li>
+                  <li>
+                    <strong>Authentication:</strong> JWT (JSON Web Token)
+                  </li>
+                  <li>
+                    <strong>Cloud Storage:</strong> Cloudinary
+                  </li>
+                  <li>
+                    <strong>Hosting:</strong> Vercel (Frontend), Render
+                    (Backend)
+                  </li>
+                </ul>
+
+                {/* Vai trò cá nhân */}
+                <h4>Personal Role:</h4>
+                <ul className={cx("role-list")}>
+                  <li>Developed UI/UX for the website using ReactJS & SCSS.</li>
+                  <li>Implemented state management using Redux.</li>
+                  <li>
+                    Integrated API for authentication and product management.
+                  </li>
+                  <li>Optimized responsive design for mobile and desktop.</li>
+                </ul>
               </div>
             </div>
           </div>
