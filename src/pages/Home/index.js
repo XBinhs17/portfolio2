@@ -419,6 +419,14 @@ function Home() {
                     (Backend)
                   </li>
                 </ul>
+                {/* Chức năng chính */}
+                <h4>Personal Role:</h4>
+                <ul>
+                  <li>Customer:</li>
+                </ul>
+                <ul>
+                  <li>Admin:</li>
+                </ul>
 
                 {/* Vai trò cá nhân */}
                 <h4>Personal Role:</h4>
