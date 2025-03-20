@@ -422,10 +422,10 @@ function Home() {
                 {/* Chức năng chính */}
                 <h4>Personal Role:</h4>
                 <ul>
-                  <li>Customer:</li>
+                  <li>Customer: Users can register/login, view introductions about Vietnamese handicraft villages, search for products, view product details, add items to the cart, save vouchers, apply vouchers, place orders and make online payments, manage order statuses, personal information, and saved voucher details.</li>
                 </ul>
                 <ul>
-                  <li>Admin:</li>
+                  <li>Admin: Manage products, categories, customer information, employee permissions, inventory management, reports and statistics, promotions, and product discounts.</li>
                 </ul>
 
                 {/* Vai trò cá nhân */}
