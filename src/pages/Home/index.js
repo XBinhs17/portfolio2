@@ -422,10 +422,21 @@ function Home() {
                 {/* Chức năng chính */}
                 <h4>Personal Role:</h4>
                 <ul>
-                  <li>Customer: Users can register/login, view introductions about Vietnamese handicraft villages, search for products, view product details, add items to the cart, save vouchers, apply vouchers, place orders and make online payments, manage order statuses, personal information, and saved voucher details.</li>
+                  <li>
+                    Customer: Users can register/login, view introductions about
+                    Vietnamese handicraft villages, search for products, view
+                    product details, add items to the cart, save vouchers, apply
+                    vouchers, place orders and make online payments, manage
+                    order statuses, personal information, and saved voucher
+                    details.
+                  </li>
                 </ul>
                 <ul>
-                  <li>Admin: Manage products, categories, customer information, employee permissions, inventory management, reports and statistics, promotions, and product discounts.</li>
+                  <li>
+                    Admin: Manage products, categories, customer information,
+                    employee permissions, inventory management, reports and
+                    statistics, promotions, and product discounts.
+                  </li>
                 </ul>
 
                 {/* Vai trò cá nhân */}
@@ -439,6 +450,11 @@ function Home() {
                   <li>Optimized responsive design for mobile and desktop.</li>
                 </ul>
               </div>
+            </div>
+            {/* hình ảnh minh họa */}
+            <div className={cx("row")}>
+              <div className={cx("col-md-6")}></div>
+              <div className={cx("col-md-6")}></div>
             </div>
           </div>
         </div>
