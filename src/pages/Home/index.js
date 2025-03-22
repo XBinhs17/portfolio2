@@ -453,8 +453,12 @@ function Home() {
             </div>
             {/* hình ảnh minh họa */}
             <div className={cx("row")}>
-              <div className={cx("col-md-6")}></div>
-              <div className={cx("col-md-6")}></div>
+              <div className={cx("col-md-6")}>
+                <p>Des</p>
+              </div>
+              <div className={cx("col-md-6")}>
+                <img src=""/>
+              </div>
             </div>
           </div>
         </div>
