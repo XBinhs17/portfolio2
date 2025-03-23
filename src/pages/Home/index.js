@@ -392,7 +392,7 @@ function Home() {
               </div>
               <div className={cx("col-md-6", "right__row1")}>
                 <h1 className={cx("project-name")}>
-                  Website introducing and providing Vietnamese handicraft
+                  1. Website introducing and providing Vietnamese handicraft
                   products
                 </h1>
                 <h4>Date: 9/2024 - 12/2024</h4>
@@ -409,18 +409,11 @@ function Home() {
                     <strong>Backend:</strong> Node.js, Express.js, MongoDB
                   </li>
                   <li>
-                    <strong>Authentication:</strong> JWT (JSON Web Token)
-                  </li>
-                  <li>
                     <strong>Cloud Storage:</strong> Cloudinary
-                  </li>
-                  <li>
-                    <strong>Hosting:</strong> Vercel (Frontend), Render
-                    (Backend)
                   </li>
                 </ul>
                 {/* Chức năng chính */}
-                <h4>Personal Role:</h4>
+                <h4>Main function:</h4>
                 <ul>
                   <li>
                     Customer: Users can register/login, view introductions about
@@ -442,12 +435,14 @@ function Home() {
                 {/* Vai trò cá nhân */}
                 <h4>Personal Role:</h4>
                 <ul className={cx("role-list")}>
+                  <li>Researched and analyzed database structures.</li>
+                  <li>Designed user interfaces using Figma, focusing on usability.</li>
                   <li>Developed UI/UX for the website using ReactJS & SCSS.</li>
-                  <li>Implemented state management using Redux.</li>
                   <li>
                     Integrated API for authentication and product management.
                   </li>
                   <li>Optimized responsive design for mobile and desktop.</li>
+                  <li>Develop APIs using Node.js and integrate them into the Frontend.</li>
                 </ul>
               </div>
             </div>
@@ -457,7 +452,7 @@ function Home() {
                 <p>Des</p>
               </div>
               <div className={cx("col-md-6")}>
-                <img src=""/>
+                <img src="" />
               </div>
             </div>
           </div>

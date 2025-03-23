@@ -421,6 +421,9 @@
             padding: 10px;
 
             .left__row1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 img{
                     width: 100%;
                     height: auto;
@@ -431,6 +434,13 @@
                 .project-name{
                     border-bottom: 1px solid var(--black-color);
                     padding-bottom: 5px;
+                }
+                h4{
+                    font-size: 20px;
+                }
+
+                ul li{
+                    font-size: 16px;
                 }
             }
         }
