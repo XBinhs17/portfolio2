@@ -436,21 +436,25 @@ function Home() {
                 <h4>Personal Role:</h4>
                 <ul className={cx("role-list")}>
                   <li>Researched and analyzed database structures.</li>
-                  <li>Designed user interfaces using Figma, focusing on usability.</li>
+                  <li>
+                    Designed user interfaces using Figma, focusing on usability.
+                  </li>
                   <li>Developed UI/UX for the website using ReactJS & SCSS.</li>
                   <li>
                     Integrated API for authentication and product management.
                   </li>
                   <li>Optimized responsive design for mobile and desktop.</li>
-                  <li>Develop APIs using Node.js and integrate them into the Frontend.</li>
+                  <li>
+                    Develop APIs using Node.js and integrate them into the
+                    Frontend.
+                  </li>
                 </ul>
               </div>
             </div>
             {/* hình ảnh minh họa */}
             <div className={cx("row")}>
-              <div className={cx("col-md-6")}>
-                <p>Des</p>
-              </div>
+              <h2>project description</h2>
+              <div className={cx("col-md-6")}></div>
               <div className={cx("col-md-6")}>
                 <img src="" />
               </div>
