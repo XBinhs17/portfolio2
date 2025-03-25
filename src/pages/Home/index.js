@@ -452,11 +452,15 @@ function Home() {
               </div>
             </div>
             {/* hình ảnh minh họa */}
-            <div className={cx("row")}>
+            <div className={cx("col-md-12")}>
               <h2>project description</h2>
-              <div className={cx("col-md-6")}></div>
+            </div>
+            <div className={cx("row")}>
               <div className={cx("col-md-6")}>
-                <img src="" />
+                Home page
+              </div>
+              <div className={cx("col-md-6")}>
+                <img src="https://picsum.photos/200/300" />
               </div>
             </div>
           </div>
