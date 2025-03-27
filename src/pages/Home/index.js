@@ -459,6 +459,7 @@ function Home() {
               <div className={cx("col-md-6")}>
                 <h3>Home page</h3>
                 <p>Des home page</p>
+                <p>Des home page</p>
               </div>
               <div className={cx("col-md-6")}>
                 <img src="https://picsum.photos/200/300" />
