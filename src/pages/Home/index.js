@@ -465,6 +465,16 @@ function Home() {
                 <img src="https://picsum.photos/200/300" />
               </div>
             </div>
+            <div className={cx("row")}>
+              <div className={cx("col-md-6")}>
+                <img src="https://picsum.photos/200/300" />
+              </div>
+              <div className={cx("col-md-6")}>
+                <h3>Product page</h3>
+                <p>Des home page</p>
+                <p>Des home page</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
