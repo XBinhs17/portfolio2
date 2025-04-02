@@ -522,6 +522,17 @@ function Home() {
               </div>
             </div>
 
+            <div className={cx("row")}>
+              <div className={cx("col-md-6")}>
+                <h3>Order management page</h3>
+                <p>Order management page</p>
+                <p>Order management page</p>
+              </div>
+              <div className={cx("col-md-6")}>
+                <img src="https://picsum.photos/200/300" />
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
