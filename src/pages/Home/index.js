@@ -527,6 +527,10 @@ function Home() {
                 <h3>Order management page</h3>
                 <p>Order management page</p>
                 <p>Order management page</p>
+                <p>Order management page</p>
+                <p>Order management page</p>
+                <p>Order management page</p>
+                <p>Order management page</p>
               </div>
               <div className={cx("col-md-6")}>
                 <img src="https://picsum.photos/200/300" />
