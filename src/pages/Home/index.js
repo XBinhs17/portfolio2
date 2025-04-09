@@ -507,19 +507,12 @@ function Home() {
               <div className={cx("col-md-6")}>
                 <h3>Account management page</h3>
                 <p>Account management page</p>
-                <p>Account management page</p>
-                <p>Account management page</p>
-                <p>Account management page</p>
               </div>
             </div>
 
             <div className={cx("row")}>
               <div className={cx("col-md-6")}>
                 <h3>Order management page</h3>
-                <p>Order management page</p>
-                <p>Order management page</p>
-                <p>Order management page</p>
-                <p>Order management page</p>
                 <p>Order management page</p>
                 <p>Order management page</p>
               </div>
@@ -531,10 +524,6 @@ function Home() {
             <div className={cx("row")}>
               <div className={cx("col-md-6")}>
                 <h3>Order management page</h3>
-                <p>Order management page</p>
-                <p>Order management page</p>
-                <p>Order management page</p>
-                <p>Order management page</p>
                 <p>Order management page</p>
                 <p>Order management page</p>
               </div>
