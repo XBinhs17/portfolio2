@@ -482,7 +482,6 @@ function Home() {
               <div className={cx("col-md-6")}>
                 <h3>Details product page</h3>
                 <p>Des Details product page</p>
-                <p>Des Details product page</p>
               </div>
               <div className={cx("col-md-6")}>
                 <img src="https://picsum.photos/200/300" />
@@ -493,7 +492,7 @@ function Home() {
               <div className={cx("col-md-6")}>
                 <h3>Cart page</h3>
                 <p>Des Cart page</p>
-                <p>Des Cart page</p>
+               
               </div>
               <div className={cx("col-md-6")}>
                 <img src="https://picsum.photos/200/300" />
@@ -506,7 +505,6 @@ function Home() {
               </div>
               <div className={cx("col-md-6")}>
                 <h3>Account management page</h3>
-                <p>Account management page</p>
               </div>
             </div>
 
