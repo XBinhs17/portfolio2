@@ -492,6 +492,10 @@ function Home() {
               <div className={cx("col-md-6")}>
                 <h3>Cart page</h3>
                 <p>Des Cart page</p>
+                <p>Des Cart page</p>
+                <p>Des Cart page</p>
+                <p>Des Cart page</p>
+
                
               </div>
               <div className={cx("col-md-6")}>
